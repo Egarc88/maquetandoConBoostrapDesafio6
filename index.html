@@ -4,23 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
     <title>Inico</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-  </head>
-
-  <body class="container">
+</head>
+<body class="container-fluid">
     <header class="header">
-      <img class="logo" src="imagenes/Logo.png" alt="" />
-      <nav class="navegador">
-        <a class="menu" href="index.html">Inicio</a>
-        <a class="menu" href="html.html/catalogo.html">Catalogo</a>
-        <a class="menu" href="html.html/multimedia.html">Multimedia</a>
-        <a class="menu" href="html.html/delevery.html">Delevery</a>
-        <a class="menu" href="html.html/ingresar.html">Formulario</a>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/menu2.jpg" class="d-block w-100 caruselP" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/menu1.jpg" class="d-block w-100 caruselP" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/menu multimedia.jpg" class="d-block w-100 caruselP" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/covermeat.jpg" class="d-block w-100 caruselP " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div>
+          <h1 class="animate_animated animate_rubberBand H1">Expertos en Carnes</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+              <a class="nav-link inicio menu" href="index.html">Inicio</a>
+              <a class="nav-link dirYart menu" aria-current="page" href="html.html/catalogo.html">Catalogo</a>
+              <a class="nav-link generos menu" href="html/multimedia.html">Multimedia</a>
+              <a class="nav-link about menu" href="html.html/delevery.html">Delevery</a>
+              <a class="nav-link contact menu" href="html.html/ingresar.html">Contactenos</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <div class="content1">
@@ -94,12 +125,34 @@
       <img class="historia1" src="imagenes/historia.jpg" alt="foto historia" />
     </div>
     <footer class="footer">
+      <div class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
       <h3>Redes Sociales</h3>
       <h3>
         Sitio Web by Erick Fernando Garcia Martinez - Todos los derechos
-        reservados
-      </h3>
-
+        reservados</h3>
       <a href="https://www.instagram.com/" target="_blank">
         <span
           class="iconify iconosFooter"
@@ -116,6 +169,10 @@
         <span class="iconify" data-icon="akar-icons:twitter-fill"></span>
       </a>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    
+
   </body>
 </html>

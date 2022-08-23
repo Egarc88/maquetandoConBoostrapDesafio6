@@ -4,7 +4,6 @@
 body {
   font-family: "Inter", sans-serif;
 }
-
 .container {
   display: grid;
   grid-template-areas:
@@ -14,30 +13,29 @@ body {
     "sidebar content3"
     "sidebar content4"
     "footer footer";
-  gap: 10px;
-}
+  gap: 10px;}
 
-.container div {
-  border: 3px black solid;
-}
-.navegador {
+.navbar {
   display: flex;
   justify-content: center;
   align-content: center;
   background-color: #f4991a;
 }
-.navegador a {
+.navbar a {
   padding: 20px;
 }
 
 .header {
   grid-area: header;
-  border: 3px black solid;
+
   background-image: url(../imagenes/covermeat.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
-
+.caruselP {
+  height: 750px;
+  object-fit: cover;
+}
 .sidebar {
   grid-area: sidebar;
   background-image: url(../imagenes/fondo2.jpg);
@@ -137,7 +135,7 @@ body {
   color: #f4991a;
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .container {
     grid-template-areas:
       "header"
@@ -211,8 +209,6 @@ body {
 
   .sidebar {
     font-size: 50%;
-  }
-}
 
 /* Pagina de Catalago */
 .containerCatalogo {
@@ -230,13 +226,13 @@ body {
 .containerCatalogo {
   border: 3px black solid;
 }
-.navegador {
+.navbar {
   display: flex;
   justify-content: center;
   align-content: center;
   background-color: #f4991a;
 }
-.navegador a {
+.navbar a {
   padding: 20px;
 }
 
@@ -425,16 +421,16 @@ body {
     width: 98%;
   }
 
-  .navegador {
+  .navbar {
     width: 100%;
   }
 
-  .navegador a {
+  .navbar a {
     padding: 5px;
     font-size: 100%;
   }
 
-  .menu a {
+  .nav-link a {
     width: 100%;
   }
 }
@@ -495,14 +491,14 @@ body {
     background-image: none;
     width: 98%;
   }
-  .navegador {
+  .navbar {
     width: 100%;
   }
-  .navegador a {
+  .navbar a {
     padding: 5px;
     font-size: 100%;
   }
-  .menu a {
+  .nav-link a {
     width: 100%;
   }
 }
@@ -609,7 +605,7 @@ body {
     padding: 4px;
     font-size: 100%;
   }
-  .menu a {
+  .nav-link a {
     width: 90%;
   }
   .footer {
@@ -618,12 +614,12 @@ body {
 }
 
 /* Animaciones */
-.menu:hover {
-  background-color: white;
+.nav-link:hover {
+  background-color: rgba(250, 108, 0, 0.921);
   color: black;
   font-size: 25px;
-  border: white 2px solid;
-  border-radius: 30px;
+  border: white 1px solid;
+  border-radius: 25px;
   box-shadow: 3px 3px gray; 
 }
 
@@ -692,4 +688,6 @@ body {
   left: 0;
   transition: 1s;
 }
- 
+.H1{
+  color: #f4991a;
+}
